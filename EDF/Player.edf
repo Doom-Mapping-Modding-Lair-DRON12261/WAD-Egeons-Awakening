@@ -1,0 +1,27 @@
+PlayerClass TestClass
+{
+	DefaultSkin marine
+	ThingType DoomPlayer
+	InitialHealth 50
+	MaxHealth 100
+	SuperHealth 200
+	SpeedWalk 15
+	SpeedRun 50
+	Default true
+	
+	RebornItem Fist
+	RebornItem Pistol
+	RebornItem AmmoClip, 50
+	
+	WeaponSlot 1 { Weapons : Chainsaw, Fist }
+	WeaponSlot 2 { Weapons : Pistol, Magnum }
+	WeaponSlot 3 { Weapons : SuperShotgun, Shotgun }
+	WeaponSlot 4 { Weapons : Chaingun }
+	WeaponSlot 5 { Weapons : RocketLauncher }
+	WeaponSlot 6 { Weapons : PlasmaRifle }
+	WeaponSlot 7 { Weapons : BFG9000 }
+	WeaponSlot 8 { Weapons : Chainsaw }
+	WeaponSlot 9 { Weapons : SuperShotgun }
+	
+	+AlwaysJump
+}

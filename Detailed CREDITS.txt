@@ -1,0 +1,127 @@
+Playpal:
+DN3Doom, DRON12261
+
+Music:
+AD_79
+
+Textures:
+Skyes: Mechadon
+Other Textures: OTEX
+
+Sounds:
+Weapons:
+Magnum:					Magmacow
+Shotgun:				Magmacow
+
+Sprites:
+Weapons:
+Pistols:				osjclatchford
+Machinegun:				osjclatchford
+Shotgun:				osjclatchford, DRON12261
+BFG9000:				osjclatchford, DRON12261
+Plasmagun:				osjclatchford
+SSG:					osjclatchford, DRON12261
+Axe:					Neoworm, DRON12261
+Chaingun:				Phantombeta
+Chainsaw:				???
+Grenade:				osjclatchford, Kronos, BloodyAcid, DBJ87
+Rocket Launcher:		osjclatchford
+Magnum:					DoomNukem, Project Brutality, DRON12261
+Black Hole Generator:	NMN, Zero Prophet, Reactor, Kronos, Midway
+Black Hole Generator A:	Eriance/Amuscaria
+Railgun:				zrrion the insect
+Plasmagun A:			Eriance/Amuscaria
+BFG9000 A:				Eriance/Amuscaria
+Monsters:
+Archfrit: 				Id Software, Espi, Ebola, Eriance/Amuscaria, Tsran908
+Flying Imp: 			Id Software, Xim, The Innocent Crew, Eriance/Amuscaria, Maelstrom, Tsran908
+Saw Imp: 				Id Software, Captain J, aeea7835, Eriance, ItsNatureToDie, Midway Entertainment, Kinsie
+Jetpack Zombie: 		Id Software, Rogue Entertainment, 3d Realms
+Archon of Hell: 		Id Software, Midway, Eriance
+Afrit: 					Id Software, Espi, Ebola
+Imp: 					???(1Shades4), Tsran908
+Baron of Hell: 			Id Software, DRON12261
+Hell Knight: 			Id Software, DRON12261
+Cyber Baron of Hell: 	Id Software, Ben2k9, DRON12261
+Cyber Hell Knight: 		Id Software, Ben2k9, mattbratt11, Ganbare-Lucifer, DRON12261
+Ult Cyber Imp: 			Id Software, Virtue, Hellspawn by LilWhiteMouse, Eriance/Amuscaria, Skelegant, Titanium, Tsran908
+Iron Chainfiend: 		Id Software, Raven Software, Neoworm, Vader, DeVloek, Ben2k9, Craneo, Tsran908
+Cyber Imp: 				Id Software, Virtue, Hellspawn by LilWhiteMouse, Eriance/Amuscaria, Tsran908
+Hell Beast: 			Id Software, NMN, TommyGalano5/Bread, Eriance/Amuscaria, Tsran908
+Cyber Chainfiend: 		Id Software, Raven Software, hnsolo77, Neoworm, Vader, DeVloek, Eriance/Amuscaria, Tsran908
+Ult Cyber Zombie: 		Id Software, Captain J, Vader, Eriance/Amuscaria, Dragonfly, Tsran908
+Ubernailborg: 			Id Software, Xim, HorrorMovieGuy/rei, Vader, Tsran908
+Shrederbus: 			Id Software, Xim, 00_Zombie_00, Ghastly_dragon, Tsran908
+Android Sergeant: 		Id Software, Neoworm, Mechadon, Marine Mark Quinn, Tsran908
+Android Major: 			Id Software, Vader, ItsNatureToDie, Eriance/Amuscaria, Captain J, Neoworm,Mechadon, Xim, Zrrion the insect, Craneo, Tsran908
+Cyber Bruiser: 			Id Software, Raven Software, Wolfendoom, Vader, Eriance/Amuscaria, Tsran908
+Dual Chaingunner: 		Id Software, Ghastly_dragon, Eriance/Amuscaria, Tormentor667, HorrorMovieGuy/rei, Tsran908, DRON12261
+Cyro: 					Id Software, Captain J, Eriance, Xim, Ghastly_dragon, HorrorMovieGuy/rei, Vader, Damson, Tsran908
+Pyro: 					Id Software, Captain J, Eriance, Xim, Ghastly_dragon, HorrorMovieGuy/rei, Vader, Damson, Tsran908
+Cacobot: 				Id Software, Midway, Rogue Software, RGamesINC, Enjay, Craneo, Tsran908
+Railgun Zombie: 		Id Software, Ghastly_dragon, Captain Toenail, Xim, Tormentor667, Captain J, 3D Realm, Neoworm, Tsran908
+Pyro Imp: 				Id Software, Raven Software, Eriance, Dreadopp, Skelegant, Tsran908
+Cacolantern: 			Id Software, Skulltag, Vader, Lexus Alyus, Tsran908
+Plaexis Bruiser: 		Id Software, Raven Software, Wolfendoom, ItsNatureToDie, S﻿olmy﻿r, Vader, Eriance/Amuscaria, SpaceyStrife, horselessheadsman, Tsran908
+Triple Arachnochain: 	Id Software, Captain Toenail, Complex Doom, someone who made baby demolisher, DustedPandemonic, Tsran908
+Overseer: 				Id Software, Jimmy91, Yuraofthehairfan, Amuscaria, Tsran908
+Bruiser: 				Id Software, Vader
+Celt: 					Id Software, Eriance, Maelstrom
+BFG Commando: 			Id Software, ItsNatureToDie, neoworm
+Blood Skull: 			3DRealms, Id Software, Amuscaria
+Abaddon: 				Vader, DRON12261
+Famine: 				Id Software, Raven Software, Kan3
+Hellion: 				Id Software, Eriance
+Hellstorm Archon: 		Id Software, Midway, Eriance
+Fiend: 					Id Software, Eriance, ???(1Shades4)
+Cyber Fiend: 			Id Software, Eriance, ???(1Shades4)
+Mech Fiend: 			Id Software, Warhawk, Dutch Devil, Tormentor667
+Melee Revenant: 		Id Software, 00_Zombie_00
+Void Imp: 				Id Software, NoC0ncentrate51, Ganbare-Lucifer
+Android: 				Id Software, 3D Realms, Neoworm
+Pestilence: 			Id Software, Kan3
+Nightshade: 			Eriance
+Nightmare: 				Id Software, Eriance
+Nightmare Imp: 			Id Software, Freedoom, Shallow B
+Lost Soul: 				Id Software, MagicWazard, DRON12261
+Poison Lost Soul: 		Id Software, MagicWazard, DRON12261
+Deadly Lost Soul: 		Id Software, MagicWazard, DRON12261
+Plasma Zombie: 			Id Software, Tormentor667, Captain Toenail, Ghastly Dragon
+Pustule: 				3DRealms, Captain Toenail
+Rocket Zombie: 			Id Software, Xim, Chain Mail
+Rapidfire Zombie: 		Id Software, NMN, Tormentor667
+Shadow: 				Vader
+Mech Soul: 				Id Software, scalliano, mattbratt11, DRON12261
+Super Demon: 			Id Software, Molten Ice, Xim, David G, Craneo
+SSG Zombie: 			Id Software, The Skulltag Team
+Terminator: 			Vader, Eriance
+Chaingunner: 			Id Software, HorrorMovieGuy, Touhou Hisouten - Scarlet Weather Rhapsody, DRON12261
+War: 					Id Software, Nanami, Virtue, Captain Toenail
+Walking Bones: 			???(1Shades4), DRON12261
+Cyber Zombie: 			???(1Shades4)
+Revenant sniper:		???(1Shades4)
+Akimbo Zombie:			???(1Shades4)
+Cacobald:				???(1Shades4)
+Diabolist:				Id Software, Raven Software, Amuscaria
+Defiler:				???(1Shades4)
+Dead Fiend:				???(1Shades4)
+Arachnochain:			???(1Shades4), DRON12261
+Annihilator:			Id Software, Raven Software, Wolfendoom, Eriance, DRON12261
+Voidcyber:				Id Software, ???, DRON12261
+Archzombie:				???
+Mother Demon:			Id Software, Midway, Cage
+Evilmind:				???(1Shades4)
+Voidvile:				???(1Shades4)
+Deadebus:				???(1Shades4)
+Cacodemon:				???(1Shades4)
+Archvile:				???(1Shades4)
+Cyber Soul:				Id Software, Hellstorm Archon
+Cryptek:				Id Software, ???(Dusted Pandemonia), DRON12261
+Sentinel:				Keeper, Vice
+Sentry:					Keeper, Vice
+Mech Elemental:			Id Software, Craneo
+Dark Cardinal:			Id Software, Jimmy, zrrion the insect, Espi, Ebola
+Eradicator:				tdawg, Vader
+Plasmabus:				Id Software, DRON12261
+Hectebus:				Id Software, Midway, AgentSpork
+Mafibus:				Id Software, Ghastly Dragon

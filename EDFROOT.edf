@@ -1,0 +1,9 @@
+setDialect("ALFHEIM")
+stdInclude("root.edf")
+
+include("EDF/Sounds.edf")
+
+include("EDF/Player.edf")
+
+include("EDF/Weapons/Magnum.edf")
+include("EDF/Weapons/Shotgun.edf")

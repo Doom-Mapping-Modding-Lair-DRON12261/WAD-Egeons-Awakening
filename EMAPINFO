@@ -1,0 +1,128 @@
+// Episode 0 - Prologue
+[INTRO]
+skyname = SKYEP1
+
+
+
+// Episode 1 - Night Rush
+[E1L1]
+skyname = SKYEP1
+music = D_E1L1
+
+[E1L2]
+skyname = SKYEP1
+
+[E1L3]
+skyname = SKYEP1
+
+[E1L4]
+skyname = SKYEP1
+
+[E1L5]
+skyname = SKYEP1
+
+[E1L6]
+skyname = SKYEP1
+
+[E1L7]
+skyname = SKYEP1
+
+
+
+// Episode 2 - Plutonium Sunrise
+[E2L1]
+skyname = SKYEP2
+music = D_E2L1
+
+[E2L2]
+skyname = SKYEP2
+
+[E2L3]
+skyname = SKYEP2
+
+[E2L4]
+skyname = SKYEP2
+
+[E2L5]
+skyname = SKYEP2
+
+[E2L6]
+skyname = SKYEP2
+
+[E2L7]
+skyname = SKYEP2
+
+
+
+// Episode 3 - Burning Descent
+[E3L1]
+skyname = SKYEP3
+music = D_E3L1
+
+[E3L2]
+skyname = SKYEP3
+
+[E3L3]
+skyname = SKYEP3
+
+[E3L4]
+skyname = SKYEP3
+
+[E3L5]
+skyname = SKYEP3
+
+[E3L6]
+skyname = SKYEP3
+
+[E3L7]
+skyname = SKYEP3
+
+
+
+// Episode 4 - Stepping into the Void
+[E4L1]
+skyname = SKYEP4
+music = D_E4L1
+
+[E4L2]
+skyname = SKYEP4
+
+[E4L3]
+skyname = SKYEP4
+
+[E4L4]
+skyname = SKYEP4
+
+[E4L5]
+skyname = SKYEP4
+
+[E4L6]
+skyname = SKYEP4
+
+[E4L7]
+skyname = SKYEP4
+
+
+
+// Episode END - Finale
+[FINAL]
+skyname = SKYEP4
+
+
+
+// Episode Secret
+[E1LS]
+skyname = SKYEP1S
+music = D_E1LS
+
+[E2LS]
+skyname = SKYEP2S
+music = D_E2LS
+
+[E3LS]
+skyname = SKYEP3S
+music = D_E3LS
+
+[E4LS]
+skyname = SKYEP4S
+music = D_E4LS
