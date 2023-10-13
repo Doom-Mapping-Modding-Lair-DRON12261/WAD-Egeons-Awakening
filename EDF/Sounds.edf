@@ -2,6 +2,14 @@
 // Weapons
 //---------
 
+// Pistols
+sound "Weapons/PistolFire1"			{ lump "/sounds/weapons/pistols/fire 1.wav"; pitchvariance Doom; subchannel Weapon; }
+sound "Weapons/PistolFire2"			{ lump "/sounds/weapons/pistols/fire 2.wav"; pitchvariance Doom; subchannel Weapon; }
+sound "Weapons/PistolFire3"			{ lump "/sounds/weapons/pistols/fire 3.wav"; pitchvariance Doom; subchannel Weapon; }
+sound "Weapons/PistolFire"			{ random { "Weapons/PistolFire1", "Weapons/PistolFire2", "Weapons/PistolFire3" } }
+sound "Weapons/PistolMagIn"			{ lump "/sounds/weapons/pistols/magazine in.wav"; pitchvariance Doom; }
+sound "Weapons/PistolMagOut"		{ lump "/sounds/weapons/pistols/magazine out.wav"; pitchvariance Doom; }
+
 // Magnum
 sound "Weapons/MagnumFire1"			{ lump "/sounds/weapons/magnum/fire 1.wav"; pitchvariance Doom; subchannel Weapon; }
 sound "Weapons/MagnumFire2"			{ lump "/sounds/weapons/magnum/fire 2.wav"; pitchvariance Doom; subchannel Weapon; }

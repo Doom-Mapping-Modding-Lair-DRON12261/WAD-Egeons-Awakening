@@ -5,5 +5,7 @@ include("EDF/Sounds.edf")
 
 include("EDF/Player.edf")
 
+include("EDF/Weapons/Pistol.edf")
+include("EDF/Weapons/Dual Pistols.edf")
 include("EDF/Weapons/Magnum.edf")
 include("EDF/Weapons/Shotgun.edf")
