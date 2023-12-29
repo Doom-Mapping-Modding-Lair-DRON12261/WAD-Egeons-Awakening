@@ -14,7 +14,8 @@ sound "Weapons/PistolMagOut"		{ lump "/sounds/weapons/pistols/magazine out.wav";
 sound "Weapons/MagnumFire1"			{ lump "/sounds/weapons/magnum/fire 1.wav"; pitchvariance Doom; subchannel Weapon; }
 sound "Weapons/MagnumFire2"			{ lump "/sounds/weapons/magnum/fire 2.wav"; pitchvariance Doom; subchannel Weapon; }
 sound "Weapons/MagnumFire3"			{ lump "/sounds/weapons/magnum/fire 3.wav"; pitchvariance Doom; subchannel Weapon; }
-sound "Weapons/MagnumFire"			{ random { "Weapons/MagnumFire1", "Weapons/MagnumFire2", "Weapons/MagnumFire3" } }
+sound "Weapons/MagnumFire4"			{ lump "/sounds/weapons/magnum/fire 4.wav"; pitchvariance Doom; subchannel Weapon; }
+sound "Weapons/MagnumFire"			{ random { "Weapons/MagnumFire1", "Weapons/MagnumFire2", "Weapons/MagnumFire3", "Weapons/MagnumFire4" } }
 sound "Weapons/MagnumCock"			{ lump "/sounds/weapons/magnum/cock.wav"; pitchvariance Doom; }
 sound "Weapons/MagnumOpen"			{ lump "/sounds/weapons/magnum/open.wav"; pitchvariance Doom; }
 sound "Weapons/MagnumClose"			{ lump "/sounds/weapons/magnum/close.wav"; pitchvariance Doom; }
@@ -32,3 +33,11 @@ sound "Weapons/ShotgunLoad"			{ random { "Weapons/ShotgunLoad1", "Weapons/Shotgu
 sound "Weapons/ShotgunPumpBack"		{ lump "/sounds/weapons/shotgun/pump back.wav"; pitchvariance Doom; }
 sound "Weapons/ShotgunPumpForward"	{ lump "/sounds/weapons/shotgun/pump forward.wav"; pitchvariance Doom; }
 
+// SSG
+sound "Weapons/SSGFire1"			{ lump "/sounds/weapons/ssg/fire 1.wav"; pitchvariance Doom; subchannel Weapon; }
+sound "Weapons/SSGFire2"			{ lump "/sounds/weapons/ssg/fire 2.wav"; pitchvariance Doom; subchannel Weapon; }
+sound "Weapons/SSGFire3"			{ lump "/sounds/weapons/ssg/fire 3.wav"; pitchvariance Doom; subchannel Weapon; }
+sound "Weapons/SSGFire"				{ random { "Weapons/SSGFire1", "Weapons/SSGFire2", "Weapons/SSGFire3" } }
+sound "Weapons/SSGOpen"				{ lump "/sounds/weapons/ssg/open.wav"; pitchvariance Doom; }
+sound "Weapons/SSGLoad"				{ lump "/sounds/weapons/ssg/load.wav"; pitchvariance Doom; }
+sound "Weapons/SSGClose"			{ lump "/sounds/weapons/ssg/close.wav"; pitchvariance Doom; }

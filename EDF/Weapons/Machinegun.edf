@@ -1,0 +1,147 @@
+//---------
+// Machinegun
+//---------
+
+// Counters
+// 0 - Magazine
+// 1 - Init Animation
+
+WeaponInfo Machinegun : Weapon
+{
+	AmmoType AmmoClip
+	AmmoUse 1
+	
+	States
+	@"
+	Ready:
+		TNT1 A 0 A_JumpIfInventory("DoomMachinegunMagazine", 1, "ReadyNotReload")
+		TNT1 A 0 A_JumpIfInventory("HardClip", 1, "Reload")
+	ReadyNotReload:
+		DMGG A 1 A_WeaponReady(WRF_ALLOWRELOAD)
+		Goto Ready
+	Select:
+		DMGG A 1 A_Raise
+		TNT1 A 0 A_Raise
+		Loop
+	Deselect:
+		DMGG A 1 A_Lower
+		TNT1 A 0 A_Lower
+		Loop
+	
+	Flash:
+		TNT1 A 1 A_Light1
+		TNT1 A 2 A_Light2
+		TNT1 A 0 A_Light0
+		Stop
+	
+	Fire:
+		TNT1 A 0 A_JumpIfInventory("DoomMachinegunMagazine", 1, "FireNotReload")
+		TNT1 A 0 A_JumpIfInventory("HardClip", 1, "Reload")
+	FireNotReload:
+		TNT1 A 0 A_JumpIfInventory("DoomMachinegunBurstMode", 1, "FireBurst")
+	FireRapid:
+		TNT1 A 0 A_ZoomFactor(0.98,ZOOM_NOSCALETURNING)
+		TNT1 A 0 A_AlertMonsters
+		TNT1 A 0 A_PlaySound("Weapon/MachinegunFire", CHAN_WEAPON)
+		TNT1 A 0 A_FireCustomMissile("MachinegunBullet", FRandom(-3,3), 1, 0, 8, 0, FRandom(-1.5,1.5))
+		TNT1 A 0 A_SetPitch(pitch-0.5)
+		TNT1 A 0 Radius_Quake(2,1,0,1,0)
+		TNT1 A 0 A_GunFlash
+		DMGF B 1 BRIGHT Offset(0,34) A_SpawnItemEx("HardBulletCasing",Cos(Pitch)*30,0,26-(Sin(Pitch)*25),Cos(Pitch)*FRandom(2,4),FRandom(3,6),-Sin(Pitch)*FRandom(3,6),0,SXF_NOCHECKPOSITION|SXF_TRANSFERPITCH)
+		TNT1 A 0 A_ZoomFactor(0.99,ZOOM_NOSCALETURNING)
+		TNT1 A 0 Radius_Quake(1,2,0,1,0)
+		DMGF C 1 BRIGHT Offset(0,32) A_SetPitch(pitch+0.3)
+		TNT1 A 0 A_ZoomFactor(1.0)
+		DMGG C 2 A_SetPitch(pitch+0.2)
+		TNT1 A 0
+		TNT1 A 0 A_JumpIfInventory("DoomMachinegunMagazine", 1, "FireRapidEnd")
+		TNT1 A 0 A_JumpIfInventory("HardClip", 1, "Reload")
+	FireRapidEnd:
+		TNT1 A 0 A_Refire
+		Goto Ready
+	FireBurst:
+		TNT1 A 0 A_GiveInventory("DoomMachinegunAltFireShotToken", 1)
+		TNT1 A 0 A_ZoomFactor(0.98,ZOOM_NOSCALETURNING)
+		TNT1 A 0 A_AlertMonsters
+		TNT1 A 0 A_PlaySound("Weapon/MachinegunFire", CHAN_WEAPON)
+		TNT1 A 0 A_FireCustomMissile("MachinegunBullet", FRandom(-1,1), 1, 0, 8, 0, FRandom(-1,1))
+		TNT1 A 0 A_SetPitch(pitch-0.5)
+		TNT1 A 0 Radius_Quake(2,1,0,1,0)
+		TNT1 A 0 A_GunFlash
+		DMGF B 1 BRIGHT Offset(0,34) A_SpawnItemEx("HardBulletCasing",Cos(Pitch)*30,0,26-(Sin(Pitch)*25),Cos(Pitch)*FRandom(2,4),FRandom(3,6),-Sin(Pitch)*FRandom(3,6),0,SXF_NOCHECKPOSITION|SXF_TRANSFERPITCH)
+		TNT1 A 0 A_ZoomFactor(0.99,ZOOM_NOSCALETURNING)
+		TNT1 A 0 Radius_Quake(1,4,0,1,0)
+		DMGF C 1 BRIGHT Offset(0,32) A_SetPitch(pitch+0.3)
+		TNT1 A 0 A_ZoomFactor(1.0)
+		DMGG C 2 A_SetPitch(pitch+0.2)
+		TNT1 A 0
+		TNT1 A 0 A_JumpIfInventory("DoomMachinegunMagazine", 1, "FireBurstLoopEnd")
+		DMGG C 10 A_TakeInventory("DoomMachinegunAltFireShotToken", 3)
+		TNT1 A 0 A_JumpIfInventory("HardClip", 1, "Reload")
+		Goto Ready
+	FireBurstLoopEnd:
+		TNT1 A 0 A_JumpIfInventory("DoomMachinegunAltFireShotToken", 3, "FireBurstEnd")
+		Goto FireBurst
+	FireBurstEnd:
+		DMGG C 10 A_TakeInventory("DoomMachinegunAltFireShotToken", 3)
+		Goto Ready
+	
+	AltFire:
+		TNT1 A 0 A_JumpIfInventory("DoomMachinegunBurstMode", 1, "AltFireToRapid")
+	AltFireToBurst:
+		TNT1 A 0 A_GiveInventory("DoomMachinegunBurstMode", 1)
+		Goto AltFireCheck
+	AltFireToRapid:
+		TNT1 A 0 A_TakeInventory("DoomMachinegunBurstMode", 1)
+	AltFireCheck:
+		DMGR M 5
+		DMGR N 2
+		DMGR N 2 Offset(0, 37)
+		DMGR N 4 Offset(0, 44) A_PlaySound("Weapon/MachinegunCheck", CHAN_WEAPON)
+		DMGR N 2 Offset(0, 37)
+		DMGR N 2
+		DMGR M 5
+		Goto Ready
+		
+	Reload: 
+		TNT1 A 0 A_JumpIfInventory("DoomMachinegunMagazine", 30, "Ready")
+		TNT1 A 0 A_JumpIfInventory("HardClip", 1, 1)
+		Goto Ready
+		DMGR MAB 3
+		TNT1 A 0 A_SetPitch(pitch+0.2)
+		TNT1 A 0 A_ZoomFactor(0.99,ZOOM_NOSCALETURNING)
+		DMGR C 5 A_PlaySound("Weapon/MachinegunOut", 8)
+		TNT1 A 0 A_ZoomFactor(1.00,ZOOM_NOSCALETURNING)
+		TNT1 A 0 A_SetPitch(pitch-0.1)
+		DMGR D 3
+		DMGR E 3 A_SetPitch(pitch-0.1)
+		DMGR F 15
+		DMGR G 4
+		TNT1 A 0 A_ZoomFactor(0.98,ZOOM_NOSCALETURNING)
+		TNT1 A 0 Radius_Quake(1,2,0,1,0)
+		TNT1 A 0 A_SetPitch(pitch-0.5)
+		DMGR H 3 A_PlaySound("Weapon/MachinegunIn", 8)
+		TNT1 A 0 A_SetPitch(pitch+0.3)
+		DMGR I 2 A_ZoomFactor(0.99,ZOOM_NOSCALETURNING)
+		TNT1 A 0 A_SetPitch(pitch+0.2)
+		DMGR J 2
+		TNT1 A 0 A_SetPitch(pitch+0.1)
+		DMGR KLN 2 A_ZoomFactor(1.00,ZOOM_NOSCALETURNING)
+		TNT1 A 0 A_JumpIfInventory("HardClip", 30 - ACS_NamedExecuteWithResult("CheckDoomMachinegunMagazineCount"), "ReloadHalf")
+		Goto ReloadFull
+	ReloadFull:
+		TNT1 A 0 A_GiveInventory("DoomMachinegunMagazine", (ACS_NamedExecuteWithResult("CheckHardClip")))
+		TNT1 A 0 A_TakeInventory("HardClip", (ACS_NamedExecuteWithResult("CheckHardClip")))
+		Goto ReloadEnd
+	ReloadHalf:
+		TNT1 A 0 A_TakeInventory("HardClip", (30 - ACS_NamedExecuteWithResult("CheckDoomMachinegunMagazineCount")))
+		TNT1 A 0 A_GiveInventory("DoomMachinegunMagazine", (30 - ACS_NamedExecuteWithResult("CheckDoomMachinegunMagazineCount")))
+	ReloadEnd:
+		DMGR M 3
+		Goto Ready
+		
+	Spawn:
+		DMGI A -1
+		Loop
+	"@
+}
